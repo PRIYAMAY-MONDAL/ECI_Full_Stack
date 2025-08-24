@@ -1,0 +1,386 @@
+/* PoliticalPartyRegistration.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.political-party-registration {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font-size: xx-large;
+  background-color: #f5f7fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.page-header {
+  background: linear-gradient(135deg, #D1A980 0%, #748873 100%);
+  background-image: url("http://localhost:5173/src/assets/Images/image3.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 600px; 
+  color: white;
+  font-weight: 1000;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.page-header p {
+  font-size: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 50px;
+}
+
+/* ✅ Ensure all sections have same width */
+.guidelines-section,
+.registration-info,
+.download-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #3498db;
+  position: relative;
+}
+
+
+/* Guidelines Section */
+.guidelines-section {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #D1A980;
+}
+
+.guidelines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guideline-item {
+  background: #f8f9fc;
+  border: 1px solid #e3e8ee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.guideline-item:hover {
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.15);
+  border-color: #748873;
+}
+
+.guideline-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.guideline-content h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.guideline-date {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.guideline-info {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.guideline-info li {
+  background: white;
+  padding: 12px 18px;
+  margin-bottom: 8px;
+  border-left: 4px solid #748873;
+  border-radius: 5px;
+  position: relative;
+  font-size: medium;
+}
+
+.guideline-info li:before {
+  content: '✓';
+  color: #27ae60;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Expand Button */
+.expand-btn {
+  background: linear-gradient(135deg, #D1A980 , #748873);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.expand-btn:hover {
+  background: linear-gradient(135deg, #748873, #D1A980);
+  transform: scale(1.1);
+}
+
+/* Registration Info Section */
+.registration-info {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #748873;
+}
+
+.registration-info .section-title {
+  border-bottom-color: #748873;
+}
+
+
+.info-grid {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 5px solid #D1A980;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  font-size: medium;
+  flex-direction: column;
+}
+
+/*.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}*/
+
+.info-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.info-card ul,
+.info-card ol {
+  padding-left: 20px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.info-card li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.info-card:nth-child(1) {
+  border-left-color: #D1A980;
+}
+
+.info-card:nth-child(2) {
+  border-left-color: #D1A980;
+}
+
+.info-card:nth-child(3) {
+  border-left-color: #D1A980;
+}
+
+/* Download Section */
+.download-section {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #D1A980;
+}
+
+.download-section .section-title {
+  border-bottom-color: #D1A980;
+}
+
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.download-item {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.download-item:hover {
+  background: linear-gradient(135deg, #748873, #D1A980 );
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(23, 162, 184, 0.3);
+  border-color: #748873;
+}
+
+.download-icon {
+  font-size: 2.5rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.download-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.download-content p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .page-header p {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .guidelines-section,
+  .registration-info,
+  .download-section {
+    padding: 25px;
+    margin: 0 10px;
+  }
+  
+  .guideline-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .guideline-content {
+    padding-right: 0;
+  }
+  
+  .expand-btn {
+    align-self: flex-end;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .download-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .page-header {
+    padding: 60px 0;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .main-content {
+    gap: 40px;
+  }
+  
+  .guidelines-section,
+  .registration-info,
+  .download-section {
+    padding: 20px;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,426 @@
+/* DownloadEpic.css */
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Page background and layout */
+.download-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #e3edf7 0%, #f5fcff 100%);
+  padding: 20px 0;
+  margin: 0;
+  font-family: 'Segoe UI', 'Verdana', Arial, sans-serif;
+}
+
+/* Main content wrapper */
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Main container */
+.download-container {
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 32px rgba(33, 150, 243, 0.14);
+  padding: 40px;
+  position: relative;
+}
+
+/* Header styling */
+.download-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.download-title {
+  font-size: 2.2rem;
+  margin: 0 0 16px 0;
+  color: #2196F3;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.download-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Form styling */
+.download-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Form group - IMPORTANT: Ensure visibility */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 1rem;
+  color: #2196F3;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+  display: block;
+}
+
+.required {
+  color: #e91e63;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.optional {
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+/* Input fields - CRITICAL: Ensure proper display */
+.form-group input {
+  font-size: 1rem;
+  padding: 14px 16px;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  background: #fafbfc;
+  color: #333;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  display: block; /* Ensure input is displayed */
+  visibility: visible; /* Ensure input is visible */
+}
+
+.form-group input:focus {
+  border-color: #2196F3;
+  background: #f0f7ff;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.form-group input.error {
+  border-color: #e91e63;
+  background: #fff5f7;
+}
+
+.form-group input::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+/* Error message */
+.error-message {
+  color: #e91e63;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  font-style: italic;
+  display: block;
+}
+
+/* CAPTCHA section */
+.captcha-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.captcha-section label {
+  font-size: 1rem;
+  color: #2196F3;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.captcha-display {
+  background: linear-gradient(90deg, #f6faff 60%, #e3edf7 100%);
+  color: #34495e;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px dashed #2196F3;
+  user-select: all;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.1);
+  flex: 0 0 auto;
+}
+
+.refresh-btn {
+  background: #f0f7ff;
+  border: 2px solid #2196F3;
+  color: #2196F3;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  flex: 0 0 auto;
+}
+
+.refresh-btn:hover,
+.refresh-btn:focus {
+  background: #2196F3;
+  color: #fff;
+  outline: none;
+}
+
+.refresh-icon {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.captcha-section input {
+  font-size: 1rem;
+  padding: 14px 16px;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  background: #fafbfc;
+  color: #333;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+}
+
+.captcha-section input:focus {
+  border-color: #2196F3;
+  background: #f0f7ff;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+/* Form actions */
+.form-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #2196F3 0%, #1976d2 100%);
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(33,150,243,0.3);
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  min-width: 200px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33,150,243,0.4);
+}
+
+.submit-btn:disabled,
+.submit-btn.loading {
+  background: #bdbdbd;
+  color: #fff;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Help message */
+.form-help {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 8px 0 0 0;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  min-width: 320px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: modalSlideIn 0.3s ease;
+  position: relative;
+}
+
+@keyframes modalSlideIn {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9) translateY(-20px);
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Modal types */
+.modal-content.success { border-left: 5px solid #4caf50; }
+.modal-content.error { border-left: 5px solid #f44336; }
+.modal-content.info { border-left: 5px solid #2196F3; }
+
+.modal-header {
+  margin-bottom: 16px;
+}
+
+.modal-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.modal-body {
+  margin-bottom: 24px;
+}
+
+.modal-message {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+.modal-close-btn {
+  padding: 10px 24px;
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background: #1976d2;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .download-container {
+    margin: 10px;
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+  
+  .download-title {
+    font-size: 1.8rem;
+  }
+  
+  .captcha-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  
+  .captcha-display {
+    text-align: center;
+  }
+  
+  .modal-content {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-container {
+    margin: 5px;
+    padding: 20px 16px;
+  }
+  
+  .download-title {
+    font-size: 1.6rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+
+/* Debug styles - Remove after testing */
+.form-group {
+  border: 1px solid transparent; /* This helps with debugging layout issues */
+}
+
+/* Ensure all inputs are visible */
+input {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
