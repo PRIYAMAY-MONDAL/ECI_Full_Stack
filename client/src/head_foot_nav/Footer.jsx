@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import "./Footer.css"
 
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -11,7 +12,7 @@ const Footer = () => {
               <h3>Quick Links</h3>
               <ul>
                 <li>
-                  <a href="#home">Home</a>
+                  <a href="/Home">Home</a>
                 </li>
                 <li>
                   <a href="#about">About ECI</a>
