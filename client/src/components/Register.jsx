@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/css/register.css';
+import '../assets/css/Election_Management/Register.css';
 import axios from 'axios';
 
 const Register = () => {
